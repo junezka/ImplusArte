@@ -1,0 +1,18 @@
+---
+import features from "../../config/features.json";
+
+console.log(features);
+---
+
+<h1 class="text-center font-extrabold text-5xl my-5">Features</h1>
+<div class="grid md:grid-cols-2 gap-4 p-4">
+    {
+        features.map((features) => (
+            <div class="bg-teal-900 p-10 rounded-xl">
+                <h2 class="text-center font-semibold text-4xl my-2">{features.title}</h2>
+                <p class="text-left text-l my-2">{features.description}</p>
+
+            </div>
+        ))
+    }
+</div>

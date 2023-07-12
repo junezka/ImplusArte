@@ -1,0 +1,24 @@
+---
+import proyect from "../../config/proyect.json";
+console.log(proyect);
+---
+<div class="text-center">
+    <h2 class="text-5xl my-5 font-bold">PROYECTOS</h2>
+{
+    proyect.map((proyect) => (
+        <div class="flex flex-col mb-2 text-center md:text-left md:flex-row">
+            <div class="flex-1 p-5">
+                <h2 class="font-semibold text-4xl my-4">
+                    {proyect.title}
+                </h2>
+                <p class="text-left text-l my-2">{proyect.description}</p>
+                <button class="bg-red-500 px-3 py-2 hover:bg-rose-950 text-4xl p-10 gap-4 rounded-2xl">Comenzar</button>
+            </div>
+            <div class="w-72 m-auto flex-1">
+                <img src={proyect.images} alt="" />
+            </div>
+        </div>
+    ))
+}
+
+</div>

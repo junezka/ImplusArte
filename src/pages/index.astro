@@ -1,0 +1,23 @@
+---
+import Layouts from "../layouts/layouts.astro"
+import Button from "../componentes/Button"
+//componentes
+import Hero from '../componentes/landing/Hero.astro'
+import More from '../componentes/landing/More.astro'
+import Features from '../componentes/landing/Features.astro'
+import Proyect from '../componentes/landing/Proyect.astro'
+import About from '../componentes/landing/about.astro'
+import '@fontsource/twinkle-star';
+
+---
+
+<Layouts paginaTitulo="Página Principal" >
+	<h1 class="text-center text-4xl font-bold">PÁGINA INICIAL</h1>
+	<p class="text-center font-semibold text-2xl mt-4">Bienvenid@ a implusarte</p>	
+	<About/>
+	<More/>
+	<Features/>
+	<Proyect/>
+	<Hero/>
+<footer/>
+</Layouts>

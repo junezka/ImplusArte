@@ -1,0 +1,43 @@
+---
+import Footer from '../componentes/footer.astro'
+interface Props{ 
+    paginaTitulo?:string
+    pageDescripcion?: string
+
+}
+const {paginaTitulo, pageDescripcion} = Astro.props
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="Esta pagina web es para los amantes del diseño y quieren impulsar sus redes sociales">
+    <title>ImplusArte | {paginaTitulo} </title>
+</head>
+<body>
+   <main class="mx-auto container pt-10">
+    <slot/>
+   </main>
+   <Footer/>
+   <style>
+	body{
+		background: #9D0B51;
+		color:white
+	}
+	.tittle{
+		color: indianred;
+	}
+    .buttom {
+        background: #ffffff56;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px 0 #e67d7d, 0 25px 50px 0 #ff7bde;
+        padding: 5px;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    </style>
+</body>
+</html>
