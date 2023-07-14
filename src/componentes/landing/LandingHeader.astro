@@ -1,0 +1,30 @@
+---
+import Logo from "./logo.astro";
+import Paquetes from "../../pages/paquetes.astro";
+---
+
+<header class="py-6 px-5 flex items-center fixed top-0 justify-between w-full z-40 text-white"
+>
+<div class="flex flex-grow basis-0">
+    <Logo/>
+</div>
+    <nav>
+        <ul
+            class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:text-center"
+        >
+            <li><a href=""></a>Branding</li>
+            <li><a href=""></a>Diseño</li>
+            <li><a href=""></a>Redes sociales</li>
+            <li><a href=""></a>Personalizado</li>
+        </ul>
+    </nav>
+    <nav class="flex flex-grow basis-0 justify-end">
+        <ul
+            class="flex text-sm [&>li>a]:text-current [&>li>a]:text-center [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+        >
+            <li><a href=""></a>Soporte</li>
+            <li><a href=""></a>Acerca</li>
+            <li><a href=""></a>Contactanos</li>
+        </ul>
+    </nav>
+</header>

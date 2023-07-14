@@ -1,0 +1,37 @@
+---
+import video from "../../../public/images/horizontal.mp4"
+---
+
+<section class="h-screen w-screen overflow-hidden text-center relative">
+    <div class="z-30 relative h-full flex flex-col">
+        <header>
+                <h2 class="text-rose-950 p-28 text-6xl font-extrabold">
+                    Bienvenido a ImplusArte
+                </h2>
+            <div class="bg-red-300/75 py-2 px-6 rounded inline-block">
+                <p class="text-rose-950 font-bold justify-start">
+                    Hacer de tu emprendimiento una experiencia inspiradora, es un
+                    placer
+                </p>
+            </div>
+        </header>
+        <footer class="flex flex-col flex-grow justify-center">
+            <div>
+                <section>
+                    <a
+                        class=" text-rose-950 border-2 rounded text-xl font-bold py-2 px-6 hover:bg-rose-400 hover:text-black transition-colors inline-block backdrop:blur-xl "
+                        href="">Comienza</a
+                    >
+                </section>
+            </div>
+        </footer>
+    </div>
+    <div class="absolute top-0 bottom-0 items-center h-full w-full z-10">
+        <video
+            class="object-cover object-center h-full w-full inline-block backdrop:blur-3xl"
+            autoplay
+            muted
+            loop
+            src={video}></video>
+    </div>
+</section>

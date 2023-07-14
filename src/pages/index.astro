@@ -1,23 +1,14 @@
 ---
-import Layouts from "../layouts/layouts.astro"
-import Button from "../componentes/Button"
+import Layouts from "../layouts/layouts.astro";
+import Button from "../componentes/Button";
 //componentes
-import Hero from '../componentes/landing/Hero.astro'
-import More from '../componentes/landing/More.astro'
-import Features from '../componentes/landing/Features.astro'
-import Proyect from '../componentes/landing/Proyect.astro'
-import About from '../componentes/landing/about.astro'
-import '@fontsource/twinkle-star';
+import Logo from "../../public/images/logotipo.png";
+import video from "../../public/images/pastel.mp4";
+import LandingHeader from "../componentes/landing/LandingHeader.astro";
+import Hero1 from "../componentes/landing/Hero1.astro";
 
 ---
-
-<Layouts paginaTitulo="Página Principal" >
-	<h1 class="text-center text-4xl font-extrabold">PÁGINA INICIAL</h1>
-	<p class="text-center font-semibold text-2xl mt-4">Bienvenid@ a implusarte</p>	
-	<About/>
-	<More/>
-	<Features/>
-	<Proyect/>
-	<Hero/>
-<footer/>
+<Layouts paginaTitulo="Página Principal">
+<LandingHeader/>
+<Hero1/>
 </Layouts>

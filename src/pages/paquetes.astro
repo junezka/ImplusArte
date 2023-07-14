@@ -1,0 +1,29 @@
+---
+import paquetes from "../componentes/landing/servicios.astro";
+import LandingHeader from "../componentes/landing/LandingHeader.astro";
+import Layout from "../layouts/layouts.astro"
+import Logo from "../../public/images/foto.jpg";
+
+---
+<Layout paginaTitulo="Paquetes">
+<LandingHeader/>
+<section class="snap-y snap-mandatory relative h-screen w-full overflow-auto">
+    <div class="snap-y snap-mandatory snap-center">
+        <paquetes/>
+    </div>
+    <div class="snap-y snap-mandatory snap-center">
+        <paquetes/>
+    </div>
+    <div class="snap-y snap-mandatory snap-center">
+        <paquetes/>
+    </div>
+    <div class="snap-y snap-mandatory snap-center">
+        <paquetes/>
+    </div>
+</section>
+<div class="absolute top-0 bottom-0 items-center h-full w-full z-10">
+    <img
+        class="object-cover object-center h-full w-full inline-block backdrop:blur-3xl"
+        src={Logo}></img>
+</div>
+</Layout>

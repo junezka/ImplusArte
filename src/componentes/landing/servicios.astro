@@ -1,0 +1,19 @@
+---
+import servicios from "../../config/servicios.json";
+---
+<div class="z-30flex flex-col h-screen w-screen overflow-hidden text-center relative">
+{
+    servicios.map((servicios) => (
+        <div class="flex flex-col mb-2 text-center md:text-left md:flex-row z-30">
+            <div class="flex-1 p-5">
+                <h2 class="text-black p-40 text-4xl font-medium">
+                    {servicios.title}
+                </h2>
+                <p class="text-black text-sm underline">{servicios.description}</p>
+                <a class="border-2 rounded text-xl font-bold py-2 px-6 hover:bg-rose-400 hover:text-black transition-colors inline-block backdrop:blur-xl text-pink-600"
+                href="">Comenzar </a>
+            </div>
+        </div>
+    ))
+}
+</div>
