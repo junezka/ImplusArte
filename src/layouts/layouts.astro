@@ -1,5 +1,8 @@
 ---
 import Footer from '../componentes/footer.astro'
+import LandingHeader from '../componentes/landing/LandingHeader.astro';
+import Logo from '../componentes/landing/logo.astro';
+import avion from '../../public/images/avion.png'
 interface Props{ 
     paginaTitulo?:string
     pageDescripcion?: string
@@ -16,6 +19,7 @@ const {paginaTitulo, pageDescripcion} = Astro.props
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="descripcion" content="Esta pagina web es para los amantes del diseño y quieren impulsar sus redes sociales">
     <title>ImplusArte | {paginaTitulo} </title>
+    <link rel="icon" href={avion}>
 </head>
 <body>
    <main>
@@ -24,8 +28,8 @@ const {paginaTitulo, pageDescripcion} = Astro.props
    <Footer/>
    <style>
 	body{
-		background: #FEF4F4;
-		color:#5A0834;
+		background: #F3F0EF;
+		color:#795655;
 	}
 	.tittle{
 		color: indianred;
